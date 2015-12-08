@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Carousel implementation for Clover Health">
+    <meta name="author" content="Larissa Muramoto">
+
+    <title>Backbone Carousel with Jasmine</title>
+
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <link href="/static/carousel/stylesheets/styles.css" rel="stylesheet">
+    <script data-main="/static/carousel/js/main" src="/static/carousel/js/lib/require.min.js"></script>
+  </head>
+  <body>
+    <div id="carousel-content" role="main"></div>
+    {% include "carousel/carousel-body-template.html" %}
+    {% include "carousel/carousel-item-template.html" %}
+    {% include "carousel/carousel-gallery-template.html" %}
+    {% include "carousel/carousel-thumb-template.html" %}
+  </body>
+</html>
+

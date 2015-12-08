@@ -1,0 +1,102 @@
+@import "compass";
+@import "layout";
+.carousel {
+  .carousel-display {
+    .carousel-title {
+      top: 0;
+      position: absolute;
+      h1 {
+        font-size: 48px;
+        margin-top: 25px;
+      }
+    }
+    .carousel-item {
+      background-color: #777;
+      max-height: 600px;
+      overflow: hidden;
+      position: relative;
+      .carousel-image {
+        width: 100%;
+      }
+      .carousel-caption {
+        bottom: 0;
+        height: 115px;
+        position: absolute;
+        z-index: 10;
+        .carousel-item-title {
+          font-size: 38px;
+          margin-top: 25px;
+        }
+        .carousel-item-description {
+          font-size: 18px;
+          margin-top: 1px;
+        }
+      }
+      .carousel-navigation {
+        .nav {
+          bottom: 0;
+          top: 0;
+          position: absolute;
+          &.nav-left {
+            left: 0;
+            width: 15%;
+            @include background-image(linear-gradient(left, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%));
+          }
+          &.nav-right {
+            right: 0;
+            width: 15%;
+            @include background-image(linear-gradient(right, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%));
+          }
+          .nav-arrow {
+            position: absolute;
+            @include opacity(0.5);
+            top: calc(50% - 39px - 7.5px); //39px to center arrows and 7.5 b/c bottom text is 115px.
+            &:hover {
+              cursor: pointer;
+              @include opacity(1);
+            }
+            &.nav-arrow-left {
+              left: 30%;
+            }
+            &.nav-arrow-right {
+              right: 30%;
+            }
+          }
+        }
+      }
+    }
+  }
+  .carousel-gallery {
+    background-color: grey;
+    display: block;
+    height: 157px;
+    padding-top: 27px; //center elements
+    .carousel-thumbs-list {
+      li {
+        padding: 0; //override bootstrap
+      }
+      .carousel-thumb {
+        height: 70px;
+        margin-right: 7px;
+        @include opacity(0.5);
+        &:hover {
+          cursor: pointer;
+          @include opacity(1);
+        }
+      }
+      .carousel-thumb-active {
+        height: 100px;
+        margin-left: 3px;
+        margin-right: 10px;
+        @include opacity(1);
+      }
+    }
+  }
+}
+@media (max-width: 766px) {
+  .carousel {
+    .carousel-gallery {
+      display: none;
+    }
+  }
+}

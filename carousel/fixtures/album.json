@@ -1,0 +1,9 @@
+[
+  {
+    "model":"carousel.album",
+    "pk":"1",
+    "fields": {
+      "name": "Around the World"
+    }
+  }
+]

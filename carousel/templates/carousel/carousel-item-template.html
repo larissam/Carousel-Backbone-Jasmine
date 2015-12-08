@@ -1,0 +1,33 @@
+<!-- Carousel Item Display Template
+================================================== -->
+{% verbatim %}
+<script id="carousel-item" type="text/x-handlebars-template">
+  <div class="carousel-item">
+    <!-- TITLE --> 
+    <div class="text-overlay carousel-title">
+      <h1 class="text-center" role="banner">Around the world</h1>
+    </div>
+
+    <!-- NAVIGATION --> 
+    <div class="carousel-navigation" role="navigation">
+      <a class="nav nav-left" role="button">
+        <img class="nav-arrow nav-arrow-left" src="/static/carousel/images/left.png">
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="nav nav-right" role="button">
+        <img class="nav-arrow nav-arrow-right" src="/static/carousel/images/right.png">
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+
+    <!-- IMAGE --> 
+    <img class="carousel-image" src="/static/carousel/{{ url }}">
+
+    <!-- CAPTION --> 
+    <div class="text-overlay carousel-caption text-center">
+      <h2 class="carousel-item-title">{{ title }}</h2>
+      <h3 class="carousel-item-description">Taken on {{ date }} in {{ location }}</h3>
+    </div>
+  </div>
+</script>
+{% endverbatim %}

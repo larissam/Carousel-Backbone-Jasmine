@@ -1,0 +1,68 @@
+[
+  {
+    "model":"carousel.photo",
+    "pk":"1",
+    "fields": {
+      "url":"test_images/image1.jpg",
+      "thumb_url":"test_images/thumb1.jpg",
+      "title":"Mountain Tunnel",
+      "date":"December 15, 2009",
+      "location":"the Rocky Mountains"
+    }
+  },
+  {
+    "model":"carousel.photo",
+    "pk":"2",
+    "fields": {
+      "url":"test_images/image2.jpg",
+      "thumb_url":"test_images/thumb2.jpg",
+      "title":"City at Night",
+      "date":"January 1, 2008",
+      "location":"London, England"
+    }
+  },
+  {
+    "model":"carousel.photo",
+    "pk":"3",
+    "fields": {
+      "url":"test_images/image3.jpg",
+      "thumb_url":"test_images/thumb3.jpg",
+      "title":"Tree-lined Drive",
+      "date":"February 26, 2008",
+      "location":"Paris, France"
+    }
+  },
+  {
+    "model":"carousel.photo",
+    "pk":"4",
+    "fields": {
+      "url":"test_images/image4.jpg",
+      "thumb_url":"test_images/thumb4.jpg",
+      "title":"Sand and Sun",
+      "date":"May 1, 2008",
+      "location":"San Diego, California"
+    }
+  },
+  {
+    "model":"carousel.photo",
+    "pk":"5",
+    "fields": {
+      "url":"test_images/image5.jpg",
+      "thumb_url":"test_images/thumb5.jpg",
+      "title":"Phone Booth",
+      "date":"March 13, 2008",
+      "location":"London, England"
+    }
+  },
+  {
+    "model":"carousel.photo",
+    "pk":"6",
+    "fields": {
+      "url":"test_images/image6.jpg",
+      "thumb_url":"test_images/thumb6.jpg",
+      "title":"Golden Gate Bridge",
+      "date":"July 4, 2008",
+      "location":"San Francisco, California"
+    }
+  }
+]
